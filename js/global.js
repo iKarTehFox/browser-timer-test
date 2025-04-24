@@ -328,7 +328,7 @@ function exportData() {
     const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
     
     // Set default file name
-    const currentTime = Date.now() / 1000;
+    const currentTime = Math.floor(Date.now() / 1000);
     const exportFileDefaultName = `timer-results-${currentTime}.json`;
     
     const linkElement = document.createElement('a');
