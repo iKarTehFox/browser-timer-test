@@ -8,8 +8,14 @@ export const menu = {
     userAgentInfo: getElement<HTMLDivElement>('userAgentInfo'),
     startButton: getElement<HTMLButtonElement>('startButton'),
     exportButton: getElement<HTMLButtonElement>('exportButton'),
+    exportContainer: getElement<HTMLDivElement>('exportContainer'),
     progressContainer: getElement<HTMLDivElement>('progress'),
-    spinner: getElement<HTMLDivElement>('testSpinner')
+    spinner: getElement<HTMLDivElement>('testSpinner'),
+    uploadForm: getElement<HTMLDivElement>('uploadForm'),
+    fileInput: getElement<HTMLInputElement>('fileInput'),
+    loadButton: getElement<HTMLButtonElement>('loadButton'),
+    sysinfoheader: getElement<HTMLTableCellElement>('sysInfoHeader'),
+    testresultsheader: getElement<HTMLTableCellElement>('testResultsHeader')
 };
 
 export const progressBar = {
