@@ -2,6 +2,7 @@ import { menu } from './utils/dom-elements';
 import { getSystemInfo } from './utils/system-info';
 import { runShortTimeoutTest, runShortIntervalTest, runLongTimeoutTest, runLongIntervalTest } from './utils/tests';
 import { displayResults, exportData } from './utils/ui';
+import { Tooltip } from 'bootstrap';
 
 // Start all tests
 async function startTests(): Promise<void> {
@@ -33,4 +34,11 @@ export function init(): void {
     // Initialize listeners
     menu.startButton.addEventListener('click', startTests);
     menu.exportButton.addEventListener('click', exportData);
+
+    // Initialize tooltips
+    const tooltipTriggerList = (document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    const tooltipTriggerElArray = Array.from(tooltipTriggerList);
+    const tooltipList = tooltipTriggerElArray.map(tooltipTriggerEl => {
+        return new Tooltip(tooltipTriggerEl); 
+    });
 }
