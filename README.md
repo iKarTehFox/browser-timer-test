@@ -43,5 +43,13 @@ You can also export the raw data as JSON by clicking the "Export Raw Data" butto
 
 JavaScript timers are not guaranteed to be precise. Browsers implement them differently, and factors like system load, background tabs, and power-saving features can affect their accuracy. Understanding these limitations is crucial when building time-sensitive web applications.
 
-Copyright (c) 2025 Diego Perez (iKarTehFox)
+# Acknowledgements (OSS)
+- **Bootstrap** ([Link](https://getbootstrap.com/)): Licensed under MIT License
+  - Copyright (c) 2011-2025 The Bootstrap Authors
+- **Material Design Icons by Pictogrammers** ([GitHub](https://github.com/Templarian/MaterialDesign)): Icons licensed under Apache License 2.0
+- **ts-pattern** ([Link](https://www.npmjs.com/package/ts-pattern)): Licensed under MIT License
+  - Copyright (c) 2021 Gabriel Vergnaud
+- **Webpack** ([Link](https://webpack.js.org/)): Licensed under MIT License
+  - Copyright JS Foundation and other contributors  
 
+Copyright (c) 2025 Diego Perez (iKarTehFox)
